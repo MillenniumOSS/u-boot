@@ -5,6 +5,10 @@ config PINCTRL_MTK
 	select REGMAP
 	select SYSCON
 	bool
+	
+config PINCTRL_MT6789
+	bool "MT6789 SoC pinctrl driver"
+	select PINCTRL_MTK
 
 config PINCTRL_MT7622
 	bool "MT7622 SoC pinctrl driver"
